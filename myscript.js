@@ -9,23 +9,21 @@ km = prompt("Inserisci il numero di chilometri da percorrere");
 // Calcolare il prezzo del biglietto in base ai chilometri
 var prezzobase;
 prezzobase = km * 0.21;
-// applicare lo sconto se possibile
+// creare lo sconto se possibile
 var scontoGiovane;
 scontoGiovane = (prezzobase * 20)/100
 var scontoAnziani;
 scontoAnziani = (prezzobase * 40)/100
 
-
+// fornire/calcolare ed applicare lo sconto se possibile
 var prezzoGiovane;
 var prezzoAnziani;
 if (eta < 18) {
-  prezzoGiovane = prezzobase - scontoGiovane
-  document.
+  prezzoGiovane = prezzobase - scontoGiovane;
+  document.getElementById('biglietto').innerHTML = prezzoGiovane;
 } else if (eta > 65) {
-  prezzoAnziani = prezzobase - scontoAnziani
+  prezzoAnziani = prezzobase - scontoAnziani;
+  document.getElementById('biglietto').innerHTML = prezzoAnziani
 } else {
-
+  document.getElementById('biglietto').innerHTML = prezzobase
 }
-
-
-// fornire il prezzo del biglietto
