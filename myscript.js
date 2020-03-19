@@ -20,10 +20,10 @@ var prezzoGiovane;
 var prezzoAnziani;
 if (eta < 18) {
   prezzoGiovane = prezzobase - scontoGiovane;
-  document.getElementById('biglietto').innerHTML = prezzoGiovane;
+  document.getElementById('biglietto').innerHTML = prezzoGiovane + " Euro";
 } else if (eta > 65) {
   prezzoAnziani = prezzobase - scontoAnziani;
-  document.getElementById('biglietto').innerHTML = prezzoAnziani
+  document.getElementById('biglietto').innerHTML = prezzoAnziani + " Euro";
 } else {
-  document.getElementById('biglietto').innerHTML = prezzobase
+  document.getElementById('biglietto').innerHTML = prezzobase + " Euro";
 }
